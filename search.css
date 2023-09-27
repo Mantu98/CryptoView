@@ -1,0 +1,27 @@
+.searchResultContainer{
+    /* border:2px solid red; */
+    overflow-y: scroll;
+}
+@media (max-width : 700px) {
+    .searchContainer22 .topCoinsLogoImg{
+        width: 40px;
+        height: 40px;
+    }
+    .searchContainer22 .nameAndPriceContainerTopCoins {
+        margin-bottom: 0;
+    }
+}
+.searchContainer22{
+    margin-bottom: 1rem;
+}
+
+.searchContainer22 h3{
+    width: 5%;
+    /* border: 1px solid red; */
+}
+
+
+.searchContainer22 div{
+    width: 60%;
+    /* border: 2px solid green; */
+}

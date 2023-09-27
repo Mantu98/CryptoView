@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *::-webkit-scrollbar{
+      display: none;
+  }
+  
+  nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+  
+  .headerDiv {
+    display: flex;
+    min-width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+  }
+  
+  .headerDiv a {
+    /* border: 2px solid red; */
+    text-decoration: none;
+    width: 60%;
+    color: black;
+  }
+  .headerDiv img {
+    width: 8.5vh;
+    height: 8.5vh;
+    /* border: 2px solid red; */
+  }
+  
+  nav a {
+    min-width: 10%;
+    height: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+    text-decoration: none;
+  }
+  
+  nav a button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(43, 4, 20, 0.863);
+    color: rgb(228, 221, 221);
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 2px 2px 3px rgba(230, 132, 4, 0.788);
+    /* border: 2px solid red; */
+  }
+
+  @media (max-width : 700px) {
+    html {
+      font-size: 14px;
+    }
+    nav a {
+      width: 18%;
+    }
+    nav {
+      padding: 1rem 2.5rem;
+    }
+    .mainContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .mainContainer .textContainer h1 {
+      font-size: 3rem;
+    }
+    .mainContainer .textContainer {
+      margin-top: 1.5rem;
+      width: 65%;
+    }
+    .mainContainer .textContainer p{
+      font-size: 1.4rem;
+    }
+    .mainContainer .imgContainer {
+       width: 70%;
+       margin-bottom: 1rem;
+    }
+  }
+  
+  .mainContainer {
+    /* border: 2px solid green; */
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  .mainContainer .textContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid green; */
+  }
+  
+  .textContainer h1 {
+    font-size: 4rem;
+  }
+  
+  .textContainer p {
+    font-size: 1.5rem;
+  }
+  
+  .imgContainer {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgContainer img {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .topCoinMainContainer {
+    /* border: 2px solid red; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+  }
+  
+  footer {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+  }
+  
+  footer img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  
+  .searchSectionMainContainer {
+    height: 80vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+
+  
+  .searchContaner {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+  }
+  
+  .searchContaner form input {
+    padding: 0.5rem 1rem;
+  }
+  
+  .searchContaner input[type="text"] {
+    width: 80ch;
+  }
+  
+  .searchResultContainer {
+    height: 80%;
+  }
+  @media (max-width : 700px) {
+    .searchContaner form input[type="text"]{
+      /* border: 1px solid red; */
+      width: 65vw;
+    }
+  }
+  
+  #TopCoinsDiv {
+    display: flex;
+    height: 90%;
+    /* border: 2px solid red; */
+    width: 100%;
+    overflow-x: scroll;
+    align-items: center;
+  }
+  
+  .topcoinsCardContainer {
+    /* border: 2px solid rgb(255, 39, 39); */
+    display: flex;
+    padding: 1rem;
+    min-width: 350px;
+    height: 80px;
+    margin: 0 2rem;
+    background-color: white;
+    box-shadow: 3px 3px 7px rgb(124, 19, 0);
+    justify-content: space-around;
+    align-items: center;
+    border: 0.5px solid rgb(32, 26, 26);
+    border-radius: 1rem;
+  }
+  @media (max-width : 700px) {
+    .topcoinsCardContainer {
+      height: 65px;
+      display: flex;
+      padding: 1rem;
+      min-width: 350px;
+      margin: 0 2rem;
+      background-color: white;
+      box-shadow: 3px 3px 5px rgba(105, 2, 2, 0.986);
+      justify-content: space-around;
+      align-items: center;
+      border: 0.5px solid rgb(32, 26, 26);
+      border-radius: 2rem;
+    }
+    .topcoinsCardContainer .nameAndPriceContainerTopCoins {
+      /* border: 1px solid red; */
+      margin-bottom: 1rem;
+    }
+    .topcoinsCardContainer img{
+      width: 35px;
+      height: 35px;
+    }
+    .topCoinMainContainer h2{
+      margin-top: 15px;
+    }
+  }
+  
+  .topcoinsCardContainer .topCoinsLogoImg{
+      width: 40px;
+      height: 40px;
+  } 

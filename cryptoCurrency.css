@@ -198,26 +198,29 @@
   
   #TopCoinsDiv {
     display: flex;
+    justify-content: space-between;
     height: 90%;
     /* border: 2px solid red; */
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
     align-items: center;
   }
-  
+  .cardDiv{
+    padding: 0 1.5rem;
+  }
   .topcoinsCardContainer {
-    /* border: 2px solid rgb(255, 39, 39); */
+    /* border: 2px solid red; */
     display: flex;
     padding: 1rem;
     min-width: 350px;
     height: 80px;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     background-color: white;
     box-shadow: 3px 3px 7px rgb(124, 19, 0);
     justify-content: space-around;
     align-items: center;
     border: 0.5px solid rgb(32, 26, 26);
-    border-radius: 1rem;
+    border-radius: .5rem;
   }
   @media (max-width : 700px) {
     .topcoinsCardContainer {
@@ -225,7 +228,6 @@
       display: flex;
       padding: 1rem;
       min-width: 350px;
-      margin: 0 2rem;
       background-color: white;
       box-shadow: 3px 3px 5px rgba(105, 2, 2, 0.986);
       justify-content: space-around;

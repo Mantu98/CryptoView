@@ -194,6 +194,9 @@
       /* border: 1px solid red; */
       width: 65vw;
     }
+    footer {
+      padding: 1rem 2rem;
+    }
   }
   
   #TopCoinsDiv {
@@ -221,6 +224,9 @@
     align-items: center;
     border: 0.5px solid rgb(32, 26, 26);
     border-radius: .5rem;
+  }
+  .topcoinsCardContainer h2 {
+    font-size: 1.2rem;
   }
   @media (max-width : 700px) {
     .topcoinsCardContainer {
@@ -263,10 +269,10 @@
   @keyframes example {
     0%   {color:red; left:0px; top:0px;}
     12.5%   {color:rgb(14, 9, 9); left:0px; top:0px;}
-    25%  {color:rgb(255, 94, 0); left:40vw; top:0px;}
-    37.5%  {color:rgb(173, 173, 25); left:40vw; top:0px;}
-    50%  {color:rgb(255, 0, 0); left:40vw; top:20px;}
-    62.5%  {color:rgba(165, 156, 156, 0); left:40vw; top:20px;}
+    25%  {color:rgb(255, 94, 0); left:30vw; top:0px;}
+    37.5%  {color:rgb(173, 173, 25); left:30vw; top:0px;}
+    50%  {color:rgb(255, 0, 0); left:30vw; top:20px;}
+    62.5%  {color:rgba(165, 156, 156, 0); left:30vw; top:20px;}
     75%  {color:rgb(128, 0, 0); left:0px; top:16px;}
     87.5%  {color:rgb(12, 88, 25); left:0px; top:16px;}
     100% {color:rgb(85, 14, 14); left:0px; top:0px;}
